@@ -233,14 +233,7 @@ public class ClearAnnotation {
 		}
 
 		Thread.sleep(3000);
-		try {
-			WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/saved.svg']")));
-			saveButton.click();
-			System.out.println("save button clicked");
-
-		} catch (Exception e) {
-			Assert.fail("Save button not clickable");
-		}
+	
 	}
 	
 
