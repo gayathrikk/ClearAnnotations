@@ -37,8 +37,10 @@ public class ClearAnnotation {
 		try {
 			WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()=' Log In ']")));
 			loginButton.click();
+			System.out.println("Selected Login button");
 		} catch (Exception e) {
 			Assert.fail("Login button not found or clickable");
+			
 		}
 
 		Thread.sleep(4000);
@@ -55,6 +57,7 @@ public class ClearAnnotation {
 		try {
 			WebElement emailInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='email']")));
 			emailInput.sendKeys("teamsoftware457@gmail.com");
+			System.out.println("Entered MailID");
 		} catch (Exception e) {
 			Assert.fail("Email input field not found");
 		}
@@ -62,6 +65,7 @@ public class ClearAnnotation {
 		try {
 			WebElement nextButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Next']")));
 			nextButton.click();
+			System.out.println("Selected Next button");
 		} catch (Exception e) {
 			Assert.fail("Next button after email not found");
 		}
@@ -69,6 +73,7 @@ public class ClearAnnotation {
 		try {
 			WebElement passwordInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password']")));
 			passwordInput.sendKeys("Health#123");
+			System.out.println("Password Entered");
 		} catch (Exception e) {
 			Assert.fail("Password input field not found");
 		}
@@ -76,6 +81,7 @@ public class ClearAnnotation {
 		try {
 			WebElement nextButton2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Next']")));
 			nextButton2.click();
+			System.out.println("Selected Next button");
 		} catch (Exception e) {
 			Assert.fail("Next button after password not found");
 		}
@@ -93,6 +99,7 @@ public class ClearAnnotation {
 		try {
 			WebElement searchTagInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search tags']")));
 			searchTagInput.sendKeys("TestM\n");
+			System.out.println("Entered sectionNumber");
 		} catch (Exception e) {
 			Assert.fail("Search tags input not found");
 		}
@@ -102,6 +109,7 @@ public class ClearAnnotation {
 		try {
 			WebElement atlasEditorIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-icon[@nbtooltip='Atlas Editor']")));
 			atlasEditorIcon.click();
+			System.out.println("Selected Atlas editor icon");
 		} catch (Exception e) {
 			Assert.fail("Atlas Editor icon not found or not clickable");
 		}
@@ -123,6 +131,7 @@ public class ClearAnnotation {
 		try {
 			WebElement editMenu = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/oldmenu.svg']")));
 			editMenu.click();
+			System.out.println("Edit Menu clicked");
 		} catch (Exception e) {
 			Assert.fail("Edit menu not clickable");
 		}
@@ -132,6 +141,8 @@ public class ClearAnnotation {
 		try {
 			WebElement contributors = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-accordion-item-header[text()='Contributors']")));
 			contributors.click();
+			System.out.println("Contributor clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Contributors option not found or clickable");
 		}
@@ -146,6 +157,8 @@ public class ClearAnnotation {
 		try {
 			WebElement contributorRadio = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='radio'])[3]")));
 			contributorRadio.click();
+			System.out.println("Mycontributor clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Contributor radio button not selectable");
 		}
@@ -155,6 +168,8 @@ public class ClearAnnotation {
 		try {
 			WebElement drawMenu = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/paintbrush.svg']")));
 			drawMenu.click();
+			System.out.println("draw Menu clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Draw menu button not clickable");
 		}
@@ -164,6 +179,8 @@ public class ClearAnnotation {
 		try {
 			WebElement unlockButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Unlock']")));
 			unlockButton.click();
+			System.out.println("unlcok button clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Unlock button not clickable");
 		}
@@ -176,6 +193,8 @@ public class ClearAnnotation {
 		try {
 			WebElement workArea = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-accordion-item-header[text()=' Work Area ']")));
 			workArea.click();
+			System.out.println("workarea clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Work Area section not clickable");
 		}
@@ -185,6 +204,8 @@ public class ClearAnnotation {
 		try {
 			WebElement copyButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Copy GeoJson']")));
 			copyButton.click();
+			System.out.println("copybutton clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Copy GeoJson button not clickable");
 		}
@@ -194,6 +215,8 @@ public class ClearAnnotation {
 		try {
 			WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/saved.svg']")));
 			saveButton.click();
+			System.out.println("save button clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Save button not clickable");
 		}
@@ -203,12 +226,23 @@ public class ClearAnnotation {
 		try {
 			WebElement clearAnnotationButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/clear_annotation.svg']")));
 			clearAnnotationButton.click();
+			System.out.println("Clear ANnotation clicked");
+
 		} catch (Exception e) {
 			Assert.fail("Clear Annotation button not clickable");
 		}
 
 		Thread.sleep(3000);
+		try {
+			WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/saved.svg']")));
+			saveButton.click();
+			System.out.println("save button clicked");
+
+		} catch (Exception e) {
+			Assert.fail("Save button not clickable");
+		}
 	}
+	
 
 	@AfterTest
 	public void tearDown() {
