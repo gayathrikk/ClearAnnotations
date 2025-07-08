@@ -5,10 +5,11 @@
     <classes>
       <class name="QA.auto.ClearAnnotation">
         <methods>
-          <include name="workAreaAndSaveActions"/>
+          <include name="atlas"/>
+          <include name="select_contributor"/>
           <include name="setup"/>
-          <include name="directDrawPage"/>
-          <include name="selectContributorAndUnlock"/>
+          <include name="tearDown"/>
+          <include name="Direct_Draw_page"/>
         </methods>
       </class> <!-- QA.auto.ClearAnnotation -->
     </classes>
